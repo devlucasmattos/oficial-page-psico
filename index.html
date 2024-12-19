@@ -1,31 +1,65 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <!-- Google Analytics - Rastreia os dados do seu site -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCDJM3SNMJ"></script>
+    <script>
+      // Função que envia dados para o Google Analytics
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); // Registra a data da visita
+      gtag('config', 'G-SCDJM3SNMJ'); // Configura o ID do Google Analytics
+    </script>
+
+    <!-- Definição do conjunto de caracteres do site -->
     <meta charset="UTF-8" />
+    
+    <!-- Ícone do site que aparecerá na aba do navegador -->
     <link rel="icon" type="image/x-icon" href="/Logotipo-cérebro-pensar-psicologia_.ico" />
+
+    <!-- Responsividade para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Define o idioma do site como português brasileiro -->
     <meta http-equiv="Content-Language" content="pt-BR">
+
+    <!-- Link para o ícone da fonte Font Awesome (ícones para redes sociais ou outros elementos) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <!-- Importação de fontes do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Permite que os motores de busca indexem o site -->
     <meta name="robots" content="index, follow">
+
+    <!-- Cor da barra de navegação do navegador (para dispositivos móveis) -->
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Descrição do site para motores de busca e compartilhamento nas redes sociais -->
     <meta name="description" content="Gabrielle Chemieski - Psicóloga especializada em Terapia Cognitivo-Comportamental. Atendimento online e presencial para jovens adultos, adultos e idosos. Transforme sua saúde mental hoje mesmo!" />
+
+    <!-- Meta tags para compartilhamento em redes sociais (Open Graph para Facebook e Twitter Cards) -->
     <meta property="og:title" content="Gabrielle Chemieski - Psicóloga | Atendimento Online e Presencial" />
     <meta property="og:description" content="Especialista em Terapia Cognitivo-Comportamental. Transforme sua saúde mental com atendimento online ou presencial em Rio Grande, RS." />
     <meta property="og:image" content="/path/to/social-share-image.jpg" />
     <meta property="og:url" content="https://psicologagabriellechemieski.com" />
     <meta property="og:type" content="website" />
+    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gabrielle Chemieski - Psicóloga | Atendimento Online e Presencial">
     <meta name="twitter:description" content="Especialista em Terapia Cognitivo-Comportamental. Transforme sua saúde mental com atendimento online ou presencial em Rio Grande, RS.">
     <meta name="twitter:image" content="/path/to/social-share-image.jpg">
+
+    <!-- Título da página, que aparecerá na aba do navegador -->
     <title>Gabrielle Chemieski | Psicóloga | Atendimento Online e Presencial</title>
 
-    <!-- JSON-LD para dados estruturados -->
+    <!-- Link para o arquivo de estilo (CSS) do site -->
+
+    <!-- Dados estruturados em formato JSON-LD (para melhorar o SEO e facilitar a busca e entendimento por motores de busca) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
+      "@type": "ProfessionalService", // Tipo de serviço, no caso psicóloga
       "name": "Gabrielle Chemieski - Psicóloga",
       "description": "Psicóloga especialista em Terapia Cognitivo-Comportamental. Atendimento online em todo o Brasil e presencial em Rio Grande, RS.",
       "url": "https://psicologagabriellechemieski.com",
@@ -33,8 +67,8 @@
         "@type": "Country",
         "name": "Brasil"
       },
-      "telephone": "+55-53-999981110",
-      "image": "https://psicologagabriellechemieski.com/gabrielle-chemieski.jpg"
+      "telephone": "+55-53-999981110", // Número de contato
+      "image": "https://psicologagabriellechemieski.com/gabrielle-chemieski.jpg" // Imagem de perfil ou logo
     }
     </script>
     
@@ -42,6 +76,9 @@
     <link rel="stylesheet" crossorigin href="/assets/index-BioeMw6D.css">
   </head>
   <body>
+    <!-- Div com id "root" para renderizar o conteúdo dinâmico do React -->
     <div id="root"></div>
+
+    <!-- Script para carregar o arquivo principal do React (main.jsx) -->
   </body>
 </html>
