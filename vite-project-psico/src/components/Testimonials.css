@@ -1,0 +1,66 @@
+.testimonials {
+  padding: 3rem 1.5rem;
+  background-color: #fff;
+  text-align: center;
+  color: #333;
+}
+
+.testimonials h2 {
+  font-size: 2.1rem;
+  color: #004d7a;
+  margin-bottom: 1rem;
+}
+
+.testimonials p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.testimonial-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas fixas */
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .testimonial-list {
+    grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+  }
+}
+
+.testimonial {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 450px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  /* Garantindo tamanhos iguais */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centralização vertical */
+  align-items: center; /* Centralização horizontal */
+  max-height: 330px; /* Altura fixa para uniformidade */
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 0.5rem; /* Pequeno espaço antes da assinatura */
+}
+
+.testimonial span {
+  font-weight: bold;
+  color: #004d7a;
+  margin-top: 0.5rem;
+}
