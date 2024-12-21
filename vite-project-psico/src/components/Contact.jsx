@@ -15,7 +15,7 @@ function Contact() {
       <p>Estou aqui para ajudar você!<br /> Entre em contato através das minhas redes sociais<br /> e tire suas dúvidas, agende uma consulta. ⤵️</p>
 
       <div className="social-icons">
-        <a href="https://api.whatsapp.com/message/3YQT5VMFXFKHI1?autoload=1&app_absent=0" className="social-icon whatsapp" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/message/3YQT5VMFXFKHI1" className="social-icon whatsapp" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-whatsapp"></i> {/* Ícone do WhatsApp */}
         </a>
         <a href="https://www.facebook.com/profile.php?id=100090650666440&mibextid=ZbWKwL" className="social-icon facebook" target="_blank" rel="noopener noreferrer">
