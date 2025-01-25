@@ -1,14 +1,25 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Analytics - Rastreia os dados do seu site -->
+    <!-- Google Analytics + Google Ads Conversion Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCDJM3SNMJ"></script>
     <script>
-      // Função que envia dados para o Google Analytics
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date()); // Registra a data da visita
-      gtag('config', 'G-SCDJM3SNMJ'); // Configura o ID do Google Analytics
+      
+      // Inicializa o Google Analytics
+      gtag('js', new Date());
+      gtag('config', 'G-SCDJM3SNMJ');
+      
+      // Inicializa o Google Ads Conversion Tracking
+      gtag('config', 'AW-16750606429');
+
+      // Evento de conversão do Google Ads
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16750606429/yTd1CKaFveAZEN3wp7M-',
+          'value': 1.0,
+          'currency': 'BRL'
+      });
     </script>
 
     <!-- Definição do conjunto de caracteres do site -->
@@ -36,7 +47,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Descrição do site para motores de busca e compartilhamento nas redes sociais -->
-    <meta name="description" content="Gabrielle Chemieski - Psicóloga especializada em Terapia Cognitivo-Comportamental. Atendimento online e presencial para jovens adultos, adultos e idosos. Transforme sua saúde mental hoje mesmo!" />
+    <meta name="description" content="Gabrielle Chemieski - Psicóloga especializada em Terapia Cognitivo-Comportamental(TCC). Atendimento online e presencial para jovens adultos, adultos e idosos. Transforme sua saúde mental hoje mesmo!" />
 
     <!-- Meta tags para compartilhamento em redes sociais (Open Graph para Facebook e Twitter Cards) -->
     <meta property="og:title" content="Gabrielle Chemieski - Psicóloga | Atendimento Online e Presencial" />
@@ -59,7 +70,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService", // Tipo de serviço, no caso psicóloga
+      "@type": "ProfessionalService",
       "name": "Gabrielle Chemieski - Psicóloga",
       "description": "Psicóloga especialista em Terapia Cognitivo-Comportamental. Atendimento online em todo o Brasil e presencial em Rio Grande, RS.",
       "url": "https://psicologagabriellechemieski.com",
@@ -67,8 +78,8 @@
         "@type": "Country",
         "name": "Brasil"
       },
-      "telephone": "+55-53-999981110", // Número de contato
-      "image": "https://psicologagabriellechemieski.com/gabrielle-chemieski.jpg" // Imagem de perfil ou logo
+      "telephone": "+55-53-999981110",
+      "image": "https://psicologagabriellechemieski.com/gabrielle-chemieski.jpg"
     }
     </script>
     
