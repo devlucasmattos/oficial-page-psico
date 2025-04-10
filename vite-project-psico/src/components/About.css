@@ -1,81 +1,156 @@
-/* About.css */
-
-/* Animação para elementos visíveis */
-.animated {
-    opacity: 0;
-    transform: translateY(50px); /* Começa deslocado para baixo */
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.animated.visible {
-    opacity: 1;
-    transform: translateY(0); /* Vai para a posição normal */
-}
-
-
-/* Estilo geral para a seção sobre */
-.sobre {
-    background-color: #fff; /* Cor de fundo neutra */
-    padding: 60px 0;
-}
-
-.sobre .container {
-    width: 90%;
+/* Estilos Base */
+.about-section {
+    padding: 8rem 0;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .about-container {
+    
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
-    margin-top: -120px;
-}
-
-
-
-/* Estilo para a imagem de perfil */
-.image-container {
+    padding: 0 2rem;
+    margin-top: -200px;
+  }
+  
+  .about-content {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Menos espaço abaixo da imagem */
-}
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  /* Imagem de Perfil */
+  .about-image-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .about-profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Texto */
+  .about-text {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+    color: #2a3f54;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+  
+  .section-title span {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title span::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #e1306c;
+  }
+  
+  .about-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1200px) {
+    .about-container {
+      padding: 0 3rem;
+      margin-top: -200px;
+    }
+  }
 
-
-
-/* Aplicando a animação à imagem da profissional */
-.profile-image {
-    width: 160px; /* Largura da imagem */
-    height: 160px; /* Altura da imagem */
-    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
-    border-radius: 50%; /* Torna a imagem arredondada */
-}
-
-.sobre h2 {
-    font-size: 2.1rem; /* Tamanho reduzido para manter simplicidade */
-    color: #004d7a; /* Cor escura para o título */
-    margin-bottom: 15px; /* Menos espaço abaixo do título */
-    font-family: 'Arial', sans-serif; /* Fonte mais simples */
-}
-
-
-.sobre p {
-    font-size: 1.1rem; /* Fonte do parágrafo menor */
-    color: #555; /* Cor mais suave */
-    line-height: 1.5;
-    max-width: 800px; /* Menos largura para o texto */
-    margin: 15px auto; /* Menos espaço em torno do parágrafo */
-    font-family: 'Arial', sans-serif; /* Fonte mais simples */
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .sobre h2 {
-        font-size: 1.6rem; /* Tamanho do título ainda mais discreto */
+  
+  
+  @media (max-width: 992px) {
+    .about-section {
+      padding: 6rem 0;
     }
 
-    .sobre p {
-        font-size: 0.9rem; /* Fonte ainda mais discreta */
+    .about-container {
+      margin-top: -170px;
     }
-
-    .profile-image {
-        width: 120px; /* Imagem ainda menor em telas pequenas */
-        height: 120px;
-        margin-top: 20px;
+    
+    .section-title {
+      font-size: 2.4rem;
     }
-}
+    
+    .about-profile-image {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 4rem 0;
+    }
+    
+    .about-container {
+      padding: 0 2rem;
+      margin-top: -90px;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .about-description p {
+      font-size: 1rem;
+    }
+    
+    .about-profile-image {
+      width: 160px;
+      height: 160px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-section {
+      padding: 3rem 0;
+    }
+    
+    .about-container {
+      padding: 0 1.5rem;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+    }
+    
+    .about-profile-image {
+      width: 140px;
+      height: 140px;
+    }
+    
+    .about-content {
+      gap: 2rem;
+    }
+  }

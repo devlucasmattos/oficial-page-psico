@@ -5,18 +5,21 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
+import InstagramFeed from './components/InstagramFeed';
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Header />
-      <About/>
-      <Services />
-      <Testimonials/>
-      <Contact/>
-      <Footer/>
-      {/* Adicione as outras seções posteriormente */}
-    </>
+      <main>
+        <About />
+        <Services />
+        <Testimonials />
+        <InstagramFeed />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

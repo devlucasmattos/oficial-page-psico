@@ -1,18 +1,28 @@
 import './Header.css';
-import useScrollAnimation from '../hooks/useScrollAnimation'; // Importando o hook para animação
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 function Header() {
-  useScrollAnimation('.animated'); // Aplica a animação a todos os elementos com a classe "animated"
+  useScrollAnimation('.animated');
 
   return (
-    <header className="header">
-      <div className="header-content">
-        <h1 className="professional-name animated">Gabrielle Chemieski</h1>
-        <p className="professional-crp animated">CRP 07/39189</p>
-        <p className="cta-phrase animated">A transformação que você busca começa na sua mente. <br/>Vamos caminhar juntos? 🧠⤵️</p>
-        <a href="https://wa.me/message/3YQT5VMFXFKHI1" 
-   className="whatsapp-button animated" target="_blank" rel="noopener noreferrer"> <span>Agende sua consulta pelo WhatsApp</span>
-        </a>
+    <header className="header-section">
+      <div className="header-container">
+        <div className="header-content">
+          <h1 className="header-title animated">Gabrielle Chemieski</h1>
+          <p className="header-subtitle animated">CRP 07/39189</p>
+          <p className="header-description animated">
+            A transformação que você busca começa na sua mente.<br />
+            Vamos caminhar juntos? 🧠⤵️
+          </p>
+          <a 
+            href="https://wa.me/message/3YQT5VMFXFKHI1" 
+            className="header-button animated" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Agende sua consulta pelo WhatsApp
+          </a>
+        </div>
       </div>
     </header>
   );
